@@ -41,12 +41,13 @@ import {
  * control lives in the Firestore/Storage security rules, not here.
  */
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyAhkPRMTP5vtUJmqoHKzILw_H07wNiB3JQ",
+  authDomain: "spoke-3ae5c.firebaseapp.com",
+  projectId: "spoke-3ae5c",
+  storageBucket: "spoke-3ae5c.firebasestorage.app",
+  messagingSenderId: "884215384881",
+  appId: "1:884215384881:web:16243e9ea7e9eb55d57e10",
+  measurementId: "G-DQGMVR5KLS"
 };
 
 const fbApp = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
