@@ -228,7 +228,7 @@ function subscribe(name, constraints, onData, onError) {
 
 async function login(email, password) {
   const credential = await signInWithEmailAndPassword(auth, email, password);
-alert(credential);
+alert(JSON.stringify(credential));
   const profile = await getById(COLLECTIONS.USERS, credential.user.uid);
   if (!profile) {
     await signOut(auth);
