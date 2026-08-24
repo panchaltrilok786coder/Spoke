@@ -230,6 +230,7 @@ async function login(email, password) {
   const credential = await signInWithEmailAndPassword(auth, email, password);
 alert(JSON.stringify(credential));
   const profile = await getById(COLLECTIONS.USERS, credential.user.uid);
+alert(JSON.stringify(profile));
   if (!profile) {
     await signOut(auth);
     throw new Error("No profile found for this account. Contact an admin.");
